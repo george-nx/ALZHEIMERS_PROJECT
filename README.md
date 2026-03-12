@@ -56,15 +56,6 @@ Alzheimer-CNN-Project
 ├── notebooks/
 │   └── ALZHEIMERS_PROJECT.ipynb
 │
-├── models/
-│   └── cnn_model.h5
-│
-├── results/
-│   ├── accuracy_graph.png
-│   └── predictions.png
-│
-├── app.py
-│
 └── README.md
 📊 Dataset
 
@@ -75,10 +66,9 @@ NonDemented	Healthy brain
 VeryMildDemented	Early stage
 MildDemented	Moderate stage
 ModerateDemented	Advanced stage
-
 📥 Dataset Download
 
-👉 Add your dataset link here:
+Add your dataset link here:
 
 https://www.kaggle.com/datasets/your-dataset-link
 ⚙️ Model Architecture
@@ -120,19 +110,18 @@ Loss	0.21
 (Replace with your actual results)
 
 🖼️ Prediction Examples
-MRI Prediction
 
 Add screenshots here after running your model.
 
 results/predictions.png
 
-Example images:
+Example images include:
 
 MRI scan input
 
 Model predicted stage
 
-Accuracy score
+Prediction confidence
 
 📉 Training Accuracy Graph
 
@@ -140,7 +129,7 @@ Add the training graph screenshot:
 
 results/accuracy_graph.png
 
-This shows:
+This graph shows:
 
 Training accuracy
 
@@ -191,6 +180,7 @@ Integration with healthcare systems
 George Edayadil
 
 AI / Machine Learning Enthusiast
+
 Interested in:
 
 Medical AI
