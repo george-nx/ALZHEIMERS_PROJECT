@@ -14,11 +14,19 @@ This project demonstrates how Deep Learning can assist doctors in early diagnosi
 
 🧩 Problem Statement
 
-Alzheimer’s disease is a progressive brain disorder that slowly destroys memory and thinking skills. Diagnosing it early is critical for treatment and patient care.
+Alzheimer’s disease is a progressive brain disorder that slowly destroys memory and thinking skills.
 
-Manual analysis of MRI scans is time-consuming and depends heavily on expert radiologists.
+Early diagnosis is critical for treatment and patient care.
 
-This project uses AI-based image classification to automatically identify Alzheimer stages from MRI scans.
+However:
+
+MRI scan analysis requires expert radiologists
+
+Manual diagnosis can be time-consuming
+
+Early-stage symptoms can be difficult to detect
+
+This project uses AI-powered image classification to automatically detect Alzheimer stages from MRI scans.
 
 🧠 Deep Learning Approach
 
@@ -28,7 +36,13 @@ TensorFlow
 
 Keras
 
-CNNs are well suited for image recognition tasks because they automatically learn spatial features such as patterns, shapes, and textures from images.
+CNN models automatically learn spatial patterns from images such as:
+
+Brain structure changes
+
+Texture differences
+
+Shape abnormalities
 
 📂 Project Structure
 Alzheimer-CNN-Project
@@ -41,10 +55,20 @@ Alzheimer-CNN-Project
 │
 ├── notebooks/
 │   └── ALZHEIMERS_PROJECT.ipynb
-
+│
+├── models/
+│   └── cnn_model.h5
+│
+├── results/
+│   ├── accuracy_graph.png
+│   └── predictions.png
+│
+├── app.py
+│
+└── README.md
 📊 Dataset
 
-The dataset contains MRI brain images categorized into four classes:
+The dataset contains MRI brain images categorized into four classes.
 
 Class	Description
 NonDemented	Healthy brain
@@ -52,35 +76,77 @@ VeryMildDemented	Early stage
 MildDemented	Moderate stage
 ModerateDemented	Advanced stage
 
-Images are resized and normalized before training the CNN model.
+📥 Dataset Download
 
+👉 Add your dataset link here:
+
+https://www.kaggle.com/datasets/your-dataset-link
 ⚙️ Model Architecture
 
 The CNN model includes:
 
-Convolution Layers for feature extraction
+Convolution Layers
 
-Batch Normalization for training stability
+Batch Normalization
 
-MaxPooling Layers for dimensionality reduction
+MaxPooling Layers
 
-Dropout Layers to prevent overfitting
+Dropout Layers
 
-Dense Layers for classification
+Dense Layers
 
-Softmax output layer for multi-class prediction
+Softmax Output Layer
+
+These layers help the model extract meaningful features from MRI images.
 
 📈 Model Training
-
-Training parameters:
-
 Parameter	Value
 Image Size	128 × 128
 Epochs	20
 Optimizer	Adam
 Loss Function	Categorical Crossentropy
 
-The model learns patterns in MRI scans that correspond to different Alzheimer stages.
+The model learns patterns from MRI scans corresponding to Alzheimer stages.
+
+📊 Model Results
+
+Example performance:
+
+Metric	Value
+Training Accuracy	95%
+Validation Accuracy	92%
+Loss	0.21
+
+(Replace with your actual results)
+
+🖼️ Prediction Examples
+MRI Prediction
+
+Add screenshots here after running your model.
+
+results/predictions.png
+
+Example images:
+
+MRI scan input
+
+Model predicted stage
+
+Accuracy score
+
+📉 Training Accuracy Graph
+
+Add the training graph screenshot:
+
+results/accuracy_graph.png
+
+This shows:
+
+Training accuracy
+
+Validation accuracy
+
+Loss reduction
 
 🖥️ How to Run the Project
 1️⃣ Clone Repository
@@ -96,47 +162,39 @@ Open:
 ALZHEIMERS_PROJECT.ipynb
 🌐 Run Web App (Optional)
 
-To test predictions using a simple interface:
+To test predictions using a simple web interface:
 
 streamlit run app.py
 
-Then open in browser:
+Open in browser:
 
 http://localhost:8501
 
-Upload an MRI image to see the predicted Alzheimer stage.
-
-📊 Results
-
-The model produces:
-
-Training Accuracy & Validation Accuracy
-
-Loss curves
-
-MRI image predictions
-
-Confusion matrix evaluation
-
-These results demonstrate the ability of CNN models to detect patterns in medical images.
+Upload an MRI image and the model will predict the Alzheimer stage.
 
 💡 Future Improvements
 
-Possible enhancements:
+Possible improvements:
 
-Transfer Learning using **ResNet or **VGG16
+Transfer Learning using ResNet / VGG16
 
-Grad-CAM visualization for explainable AI
+Explainable AI using Grad-CAM
 
-Larger MRI datasets
+Larger medical datasets
 
-Model deployment on cloud
+Cloud deployment
 
-Integration with hospital systems
+Integration with healthcare systems
 
 🧑‍💻 Author
 
 George Edayadil
 
 AI / Machine Learning Enthusiast
-Interested in Medical AI, Computer Vision, and Deep Learning
+Interested in:
+
+Medical AI
+
+Computer Vision
+
+Deep Learning
